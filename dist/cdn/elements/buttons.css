@@ -18,7 +18,7 @@ button {
   line-height: normal;
 }
 
-button:not(.toolbary) {
+:is(.button, button):not(.toolbary) {
   color: var(--on-primary);
   background-color: var(--primary);
 }
