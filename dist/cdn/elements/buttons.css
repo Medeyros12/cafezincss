@@ -113,6 +113,14 @@ a.toolbary {
   border-radius: 1.75rem;
 }
 
+.vertical, .vertical-axis-group > a.toolbary {
+  display: inline-flex;
+  gap: 0.5rem;
+  min-inline-size: auto;
+  min-block-size: 2.5rem;
+  border-radius: 1.75rem;
+}
+
 a.toolbary.auto {
   display: inline-flex;
   gap: 0.5rem;
