@@ -104,3 +104,20 @@ button {
 :is(.button, button):not(.chip).active {
   border-radius: 0.5rem !important;
 }
+
+a.toolbary {
+  display: inline-flex;
+  gap: 0.5rem;
+  min-inline-size: 2.5rem;
+  min-block-size: 2.5rem;
+  border-radius: 1.75rem;
+}
+
+a.toolbary:has(> :not(i)) {
+  padding: 0 1rem;
+}
+
+a.toolbary.active {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
