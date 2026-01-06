@@ -105,7 +105,7 @@ button {
   border-radius: 0.5rem !important;
 }
 
-a.toolbary {
+.toolbary {
   display: inline-flex;
   gap: 0.5rem;
   min-inline-size: 2.5rem;
@@ -113,31 +113,7 @@ a.toolbary {
   border-radius: 1.75rem;
 }
 
-.vertical, .vertical-axis-group > a.toolbary {
-  display: inline-flex;
-  gap: 0.5rem;
-  min-inline-size: auto;
-  min-block-size: 2.5rem;
-  border-radius: 1.75rem;
-}
-
-a.toolbary.auto {
-  display: inline-flex;
-  gap: 0.5rem;
-  width: auto;
-  height: auto;
-  border-radius: 1.75rem;
-}
-
-a.toolbary.fit {
-  display: inline-flex;
-  gap: 0.5rem;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 1.75rem;
-}
-
-a.toolbary.large {
+.toolbary.large {
   display: inline-flex;
   gap: 0.5rem;
   min-inline-size: 3rem;
@@ -146,16 +122,16 @@ a.toolbary.large {
 }
 
 
-a.toolbary:has(> :not(i)) {
+.toolbary:has(> :not(i)) {
   padding: 0 1rem;
 }
 
-a.toolbary.active {
+.toolbary.active {
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
 }
 
-a.toolbary:active {
+.toolbary:active {
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
 }
