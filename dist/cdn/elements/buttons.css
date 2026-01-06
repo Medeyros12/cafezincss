@@ -113,6 +113,22 @@ a.toolbary {
   border-radius: 1.75rem;
 }
 
+a.toolbary.auto {
+  display: inline-flex;
+  gap: 0.5rem;
+  width: auto;
+  height: auto;
+  border-radius: 1.75rem;
+}
+
+a.toolbary.fit {
+  display: inline-flex;
+  gap: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1.75rem;
+}
+
 a.toolbary.large {
   display: inline-flex;
   gap: 0.5rem;
