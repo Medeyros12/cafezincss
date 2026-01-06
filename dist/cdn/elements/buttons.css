@@ -121,3 +121,8 @@ a.toolbary.active {
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
 }
+
+a.toolbary:active {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
