@@ -113,6 +113,15 @@ a.toolbary {
   border-radius: 1.75rem;
 }
 
+a.toolbary.large {
+  display: inline-flex;
+  gap: 0.5rem;
+  min-inline-size: 3rem;
+  min-block-size: 3rem;
+  border-radius: 1.5rem;
+}
+
+
 a.toolbary:has(> :not(i)) {
   padding: 0 1rem;
 }
