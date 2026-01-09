@@ -8,19 +8,16 @@ button {
   justify-content: center;
   block-size: var(--_size);
   font-size: 0.875rem;
-  font-weight: 500;  
-  padding: 0 var(--_padding);  
+  font-weight: 500;
+  color: var(--on-primary);
+  padding: 0 var(--_padding);
+  background-color: var(--primary);
   margin: 0 0.5rem;
   border-radius: var(--_size);
   transition: transform var(--speed3), border-radius var(--speed2), padding var(--speed3);
   user-select: none;
   gap: 0.5rem;
   line-height: normal;
-}
-
-:is(.button, button):not(.toolbary) {
-  color: var(--on-primary);
-  background-color: var(--primary);
 }
 
 :is(button, .button).small {
@@ -108,35 +105,26 @@ button {
   border-radius: 0.5rem !important;
 }
 
-.toolbary {
-  display: inline-flex;
-  gap: 0.5rem;
-  min-inline-size: 2.5rem;
-  min-block-size: 2.5rem;
-  border-radius: 1.75rem;
-  background-color: var(--surface-container);
+a.toolbary {
+	display: inline-flex;
+	gap: 0.5rem;
+	min-inline-size: 2.5rem;
+	min-block-size: 2.5rem;
+	border-radius: 1.75rem;
 }
 
-.toolbary.large {
-  display: inline-flex;
-  gap: 0.5rem;
-  min-inline-size: 3rem;
-  min-block-size: 3rem;
-  border-radius: 1.5rem;
-  background-color: var(--surface-container);
+a.toolbary:has(> :not(i)) {
+	padding: 0 1rem;
 }
 
-
-.toolbary:has(> :not(i)) {
-  padding: 0 1rem;
+a.toolbary:active {
+	background-color: var(--secondary-container);
+	color: var(--on-secondary-container);
+	border-radius: 1.75rem;
 }
 
-.toolbary.active {
-  background-color: var(--secondary-container);
-  color: var(--on-secondary-container);
-}
-
-.toolbary:active {
-  background-color: var(--secondary-container);
-  color: var(--on-secondary-container);
+a.toolbary.active {
+	background-color: var(--secondary-container);
+	color: var(--on-secondary-container);
+	border-radius: 1.75rem;
 }
