@@ -111,6 +111,7 @@ a.toolbary {
 	min-inline-size: 2.5rem;
 	min-block-size: 2.5rem;
 	border-radius: 1.75rem;
+	background-color: rgba(0,0,0,0);
 }
 
 a.toolbary:has(> :not(i)) {
