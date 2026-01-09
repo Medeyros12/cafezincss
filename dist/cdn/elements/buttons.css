@@ -18,7 +18,7 @@ button {
   line-height: normal;
 }
 
-:is(.button, button):not(.toolbary) {
+:is(button, .button):not(.toolbary) {
   background-color: var(--primary);
   color: var(--on-primary);
 }
@@ -108,7 +108,7 @@ button {
   border-radius: 0.5rem !important;
 }
 
-a.toolbary {
+.toolbary {
   display: inline-flex;
   gap: 0.5rem;
   min-inline-size: 2.5rem;
@@ -118,17 +118,17 @@ a.toolbary {
   color: var(--on-surface-container);
 }
 
-a.toolbary:has(> :not(i)) {
+.toolbary:has(> :not(i)) {
   padding: 0 1rem;
 }
 
-a.toolbary:active {
+.toolbary:active {
   background-color: var(--surface-container-high);
   color: var(--on-surface-container-high);
   border-radius: 1.75rem;
 }
 
-a.toolbary.active {
+.toolbary.active {
   background-color: var(--surface-container-high);
   color: var(--on-surface-container-high);
   border-radius: 1.75rem;
